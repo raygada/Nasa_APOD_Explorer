@@ -1,0 +1,5 @@
+package com.finfactor.nasa_apod_explorer.controller;
+
+public class ApodController {
+
+}

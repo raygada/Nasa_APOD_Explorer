@@ -1,0 +1,29 @@
+package com.finfactor.nasa_apod_explorer.service;
+
+import java.time.LocalDate;
+
+import org.springframework.cache.annotation.Cacheable;
+import org.springframework.stereotype.Service;
+
+import com.finfactor.nasa_apod_explorer.dto.ApodResponse;
+import com.finfactor.nasa_apod_explorer.util.NasaApiClient;
+
+@Service
+public class ApodService {
+
+    private final NasaApiClient nasaApiClient;
+
+    public ApodService(NasaApiClient nasaApiClient) {
+        this.nasaApiClient = nasaApiClient;
+    }
+
+    @Cacheable(value = "apodCache", key = "#date")
+    public ApodResponse getApodByDate(String date) {
+        return nasaApiClient.getApodByDate(date);
+    }
+
+    public ApodResponse getTodayApod() {
+        return getApodByDate(LocalDate.now().toString());
+    }
+}
+

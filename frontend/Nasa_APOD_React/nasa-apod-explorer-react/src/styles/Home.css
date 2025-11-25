@@ -1,0 +1,93 @@
+/* Container for Home Page */
+.home-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;       /* horizontal center */
+  justify-content: flex-start; /* vertical start, scrollable */
+  max-width: 900px;          /* optional max width */
+  margin: 0 auto;            /* center horizontally in page */
+  padding: 20px;
+  box-sizing: border-box;
+  min-height: 100vh;         /* full viewport height */
+  text-align: center;        /* center headings and text */
+  gap: 20px;                 /* spacing between elements */
+  background-color: var(--background); /* optional dark/light mode */
+  color: var(--text-color);
+}
+
+/* Headings */
+.home-container h1 {
+    font-size: 2.5rem;
+    text-align: center;
+    color: #0b3d91; /* NASA blue */
+    margin-bottom: 1rem;
+}
+
+.home-container h2 {
+    font-size: 1.8rem;
+    color: #1a1a1a;
+    margin-bottom: 1rem;
+}
+
+.home-container h3 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+/* Section Separation */
+hr {
+    border: 0;
+    height: 1px;
+    background: #ccc;
+    margin: 2rem 0;
+}
+
+/* Loader or Message Styling */
+.home-container p {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #555;
+}
+
+/* Dark Mode Support */
+.dark-mode .home-container h1,
+.dark-mode .home-container h2,
+.dark-mode .home-container h3,
+.dark-mode .home-container p {
+    color: #f0f0f0;
+}
+
+.dark-mode hr {
+    background: #555;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .home-container {
+        padding: 1rem;
+    }
+    .home-container h1 {
+        font-size: 2rem;
+    }
+    .home-container h2 {
+        font-size: 1.5rem;
+    }
+    .home-container h3 {
+        font-size: 1.3rem;
+    }
+}
+@media (max-width: 480px) {
+    .home-container {
+        padding: 0.5rem;
+    }
+    .home-container h1 {
+        font-size: 1.5rem;
+    }
+    .home-container h2 {
+        font-size: 1.2rem;
+    }
+    .home-container h3 {
+        font-size: 1rem;
+    }
+}

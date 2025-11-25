@@ -1,0 +1,12 @@
+.today-apod-loading {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px;
+}
+.today-apod-error {
+    color: red;
+    font-weight: bold;
+    text-align: center;
+    padding: 20px;
+}

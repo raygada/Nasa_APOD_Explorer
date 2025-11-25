@@ -1,0 +1,33 @@
+package com.finfactor.nasa_apod_explorer.util;
+
+import java.util.Map;
+
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.stereotype.Component;
+import org.springframework.web.client.RestTemplate;
+
+import com.finfactor.nasa_apod_explorer.dto.ApodResponse;
+
+@Component
+public class NasaApiClient {
+
+    @Value("${nasa.api.key}")
+    private String apiKey;
+
+    private final RestTemplate restTemplate = new RestTemplate();
+
+    public ApodResponse getApodByDate(String date) {
+        String url = "https://api.nasa.gov/planetary/apod?api_key=" + apiKey + "&date=" + date;
+        Map<String, Object> response = restTemplate.getForObject(url, Map.class);
+
+        return new ApodResponse(
+            (String) response.get("date"),
+            (String) response.get("title"),
+            (String) response.get("explanation"),
+            (String) response.get("url"),
+            (String) response.get("media_type"),
+            response.get("copyright") != null ? (String) response.get("copyright") : ""
+        );
+    }
+}
+

@@ -1,0 +1,21 @@
+package com.finfactor.nasa_apod_explorer.dto;
+
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
+public class ApodResponse {
+    public ApodResponse(String string, String string2, String string3, String string4, String string5, Object object) {
+		// TODO Auto-generated constructor stub
+	}
+	private String date;
+    private String title;
+    private String explanation;
+    private String url;
+    private String mediaType;
+    private String copyright;
+}
+

@@ -1,0 +1,17 @@
+package com.finfactor.nasa_apod_explorer.entity;
+
+@Entity
+@Table(name="apod")
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
+public class ApodEntity {
+    @Id
+    private LocalDate date;
+    private String title;
+    private String explanation;
+    private String url;
+    private String mediaType;
+    private String copyright;
+}
+

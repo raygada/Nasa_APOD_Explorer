@@ -1,0 +1,13 @@
+body.dark-mode {
+    background-color: var(--bg-dark);
+    color: var(--text-light);
+}
+
+body.dark-mode .card {
+    background-color: #1e1e1e;
+    color: var(--text-light);
+    border: none;
+}
+body.dark-mode a {
+    color: var(--primary-color);
+}

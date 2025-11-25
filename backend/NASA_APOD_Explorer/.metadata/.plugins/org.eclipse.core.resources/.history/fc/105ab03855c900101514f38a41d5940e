@@ -1,0 +1,5 @@
+package com.finfactor.nasa_apod_explorer.entity;
+
+public class ApodEntity {
+
+}

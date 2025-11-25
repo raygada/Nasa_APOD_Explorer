@@ -1,0 +1,22 @@
+:root {
+  --primary-color: #0d6efd;
+  --text-color: #212529;
+  --card-bg: #fff;
+}
+
+body.dark-mode {
+  background-color: #121212;
+  color: #e0e0e0;
+}
+
+body.dark-mode .apod-card {
+  background-color: #1e1e1e;
+  color: #fff;
+}
+
+input, button {
+  border-radius: 5px;
+}
+a {
+  color: var(--primary-color);
+}

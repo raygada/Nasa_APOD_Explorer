@@ -1,0 +1,45 @@
+.datepicker-wrapper {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.datepicker-box {
+  width: 100%;
+  max-width: 400px;
+  padding: 20px;
+  border-radius: 12px;
+  background: #ffffff;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.datepicker-box label {
+  font-weight: 600;
+  margin-bottom: 8px;
+  display: block;
+  font-size: 1.1rem;
+}
+
+.datepicker-box input[type="date"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+}
+
+.fetch-btn {
+  width: 100%;
+  padding: 10px;
+  font-weight: bold;
+  border-radius: 8px;
+}
+
+.apod-result {
+  margin-top: 25px;
+  width: 100%;
+  max-width: 700px;
+}

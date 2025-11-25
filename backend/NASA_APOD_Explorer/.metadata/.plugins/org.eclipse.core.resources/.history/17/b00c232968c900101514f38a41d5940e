@@ -1,0 +1,5 @@
+spring.application.name=NASA_APOD_EXPLORER
+server.port=8085
+nasa.api.key=GRmGQR3ggDc7XDLLgfCj14ww9euepuGdo2vnwcFA
+spring.cache.type=caffeine
+spring.cache.caffeine.spec=maximumSize=50,expireAfterWrite=24h
