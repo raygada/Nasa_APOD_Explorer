@@ -97,16 +97,16 @@ VITE_API_BASE_URL=/api/apod
 ## Screenshots
 
 ### Home Page
-![Home Page](screenshots/Nasa_Apod_HomePage.png)
+![Home Page](Screenshot/Nasa_Apod_HomePage.png)
 
 ### APOD (By DateSelector)
-![Select Date Page](screenshots/Nasa_Apod_Selecting_Date_Apod.png)
+![Select Date Page](Screenshot/Nasa_Apod_Selecting_Date_Apod.png)
 
 ### Gallery Page
-![Gallery Page](screenshots/Nasa_Apod_Gallery.png)
+![Gallery Page](Screenshot/Nasa_Apod_Gallery.png)
 
 ### Favorites Page
-![Favorites Page](screenshots/Nasa_Apod_Favorite_Apod.png)
+![Favorites Page](Screenshot/Nasa_Apod_Favorite_Apod.png)
 
 ### APOD Images After Fetch Page
-![Images After Fetch Page](screenshots/Nasa_Apod_Images_After_Fetch.png)
+![Images After Fetch Page](Screenshot/Nasa_Apod_Images_After_Fetch.png)
