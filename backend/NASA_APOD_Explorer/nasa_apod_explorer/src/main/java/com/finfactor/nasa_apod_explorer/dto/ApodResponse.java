@@ -10,78 +10,17 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 public class ApodResponse {
-    public ApodResponse(String string, String string2, String string3, String string4, String string5, Object object) {
-		// TODO Auto-generated constructor stub
-	}
 	private String date;
     private String title;
     private String explanation;
     private String url;
-    public ApodResponse(String date, String title, String explanation, String url, String mediaType, String hdurl,
-			String serviceVersion, String copyright) {
-		super();
-		this.date = date;
-		this.title = title;
-		this.explanation = explanation;
-		this.url = url;
-		this.mediaType = mediaType;
-		this.hdurl = hdurl;
-		this.serviceVersion = serviceVersion;
-		this.copyright = copyright;
-	}
+    
 	@JsonProperty("media_type")
     private String mediaType;
     private String hdurl;
-    public String getHdurl() {
-		return hdurl;
-	}
-	public void setHdurl(String hdurl) {
-		this.hdurl = hdurl;
-	}
-	public String getServiceVersion() {
-		return serviceVersion;
-	}
-	public void setServiceVersion(String serviceVersion) {
-		this.serviceVersion = serviceVersion;
-	}
 	@JsonProperty("service_version")
     private String serviceVersion;
     private String copyright;
-	public String getDate() {
-		return date;
-	}
-	public void setDate(String date) {
-		this.date = date;
-	}
-	public String getTitle() {
-		return title;
-	}
-	public void setTitle(String title) {
-		this.title = title;
-	}
-	public String getExplanation() {
-		return explanation;
-	}
-	public void setExplanation(String explanation) {
-		this.explanation = explanation;
-	}
-	public String getUrl() {
-		return url;
-	}
-	public void setUrl(String url) {
-		this.url = url;
-	}
-	public String getMediaType() {
-		return mediaType;
-	}
-	public void setMediaType(String mediaType) {
-		this.mediaType = mediaType;
-	}
-	public String getCopyright() {
-		return copyright;
-	}
-	public void setCopyright(String copyright) {
-		this.copyright = copyright;
-	}
+	
 }
 
